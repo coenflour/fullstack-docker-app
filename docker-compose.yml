@@ -6,7 +6,7 @@ services:
     ports:
       - "5000:5000"
     networks:
-      - app-network
+      - fullstack-net
 
   frontend:
     build: ./frontend
@@ -15,7 +15,7 @@ services:
     depends_on:
       - backend
     networks:
-      - app-network
+      - fullstack-net
 
 networks:
-  app-network:
+  fullstack-net:
